@@ -21,10 +21,10 @@ public class Astronomer {
 			for (int i = 0; i < 10; i++) {
 					String nev = this.name + (i + 1);
 					Point pozicio = new Point(i * 10, 0, 0);
-					double atmero = new Random().nextInt(1000000);
+					double rad = new Random().nextInt(1000000);
 
 				
-	DiscoveredPlanets.add(new Planet(atmero, nev, pozicio));
+	DiscoveredPlanets.add(new Planet(pozico.toString,nev,rad));
 		
 	}
 	}
