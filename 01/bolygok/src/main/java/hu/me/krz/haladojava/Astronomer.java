@@ -19,12 +19,12 @@ public class Astronomer {
 	
 	public void observeTheSky() {
 			for (int i = 0; i < 10; i++) {
-					String nev = this.name + (i + 1);
-					Point pozicio = new Point(i * 10, 0, 0);
-					double rad = new Random().nextInt(1000000);
+					String name = this.name + (i + 1);
+					Point position = new Point(i * 10, 0, 0);
+					int radian = new Random().nextInt(1000000);
 
 				
-	DiscoveredPlanets.add(new Planet(pozico.toString,nev,rad));
+	DiscoveredPlanets.add(new Planet(position.toString(),radian,name));
 		
 	}
 	}
