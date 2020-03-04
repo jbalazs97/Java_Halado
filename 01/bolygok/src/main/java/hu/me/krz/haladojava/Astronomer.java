@@ -10,6 +10,10 @@ public class Astronomer {
 	super();
 	this.name = name;
 	}
+	
+	public String getName() {
+		return name;
+	}
 
 	public List<Planet> getDiscoveredPlanets() {
 	return DiscoveredPlanets;
@@ -22,9 +26,7 @@ public class Astronomer {
 					String name = this.name + (i + 1);
 					Point position = new Point(i * 10, 0, 0);
 					int radian = new Random().nextInt(1000000);
-
-				
-	DiscoveredPlanets.add(new Planet(position.toString(),radian,name));
+					DiscoveredPlanets.add(new Planet(position,radian,name));
 		
 	}
 	}
